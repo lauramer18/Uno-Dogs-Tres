@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Booking - Uno Dogs Tres</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Uno Dogs Tres</h1>
+        <div>
+            <button onclick="switchLanguage('en')">English</button>
+            <button onclick="switchLanguage('de')">Deutsch</button>
+            <button onclick="switchLanguage('es')">Español</button>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Book Your Consultation</h2>
+            <p>Fill out the form below to request an appointment. I'll get back to you within 48 hours to confirm your booking.</p>
+            
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="dog_name">Dog's Name *</label>
+                    <input type="text" id="dog_name" name="dog_name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dog_age">Dog's Age *</label>
+                    <input type="text" id="dog_age" name="dog_age" placeholder="e.g., 2 years" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dog_breed">Breed *</label>
+                    <input type="text" id="dog_breed" name="dog_breed" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="main_issue">Main Issue/Focus of Consultation *</label>
+                    <textarea id="main_issue" name="main_issue" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="intensity">How intense is the issue? (1-10) *</label>
+                    <p style="font-size: 0.9rem; color: #666; margin: 0.5rem 0;">1 = slight issue | 10 = critical/urgent</p>
+                    <input type="range" id="intensity" name="intensity" min="1" max="10" value="5" style="cursor: pointer;">
+                    <p><span id="intensity_display">5</span>/10</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="service_type">Service Type *</label>
+                    <select id="service_type" name="service_type" required>
+                        <option value="">-- Select a Service --</option>
+                        <option value="training">Individual Training</option>
+                        <option value="consultation">Dog Behavior Consultation</option>
+                        <option value="social_walks">Social Walks</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="format">Preferred Format (for consultations/training)</label>
+                    <select id="format" name="format">
+                        <option value="">-- Select --</option>
+                        <option value="online">Online</option>
+                        <option value="in_person">In-person</option>
+                        <option value="outdoor">Outdoor</option>
+                        <option value="flexible">Flexible</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Additional Information</label>
+                    <textarea id="message" name="message" placeholder="Any other details you'd like to share..."></textarea>
+                </div>
+                
+                <button type="submit">Request Appointment</button>
+            </form>
+            
+            <h3 style="margin-top: 2rem;">Direct Contact</h3>
+            <p><strong>Email:</strong> laura.mer18@gmail.com</p>
+            <p><strong>Service Area:</strong> Mannheim, Germany (Online worldwide)</p>
+            <p><strong>Timezone:</strong> CET (Central European Time)</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Uno Dogs Tres. All rights reserved.</p>
+        <p><a href="impressum.html">Impressum</a> | <a href="terms.html">Terms & Conditions</a> | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+    <script>
+        // Update intensity display
+        document.getElementById('intensity').addEventListener('input', function() {
+            document.getElementById('intensity_display').textContent = this.value;
+        });
+    </script>
+</body>
+</html>
