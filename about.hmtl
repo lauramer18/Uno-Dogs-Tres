@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Mercedes - Uno Dogs Tres</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Uno Dogs Tres</h1>
+        <div>
+            <button onclick="switchLanguage('en')">English</button>
+            <button onclick="switchLanguage('de')">Deutsch</button>
+            <button onclick="switchLanguage('es')">Español</button>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section>
+            <h2>About Mercedes</h2>
+            <img src="images/placeholder-mercedes.jpg" alt="Mercedes" style="max-width: 300px; border-radius: 10px;">
+            
+            <h3>My Journey</h3>
+            <p>I'm Mercedes, a certified dog trainer and behavior consultant from Buenos Aires, Argentina. After studying biology, dog behavior, and dog training in Germany, I've dedicated myself to modern, science-based training methods that prioritize compassion and empathy for both dogs and their humans.</p>
+            
+            <h3>My Philosophy</h3>
+            <p>My training methods are as modern as they get, based not only on science but also, and not less importantly, on compassion and empathy. I believe that understanding the dog's perspective and emotions is essential to creating lasting, positive behavioral changes.</p>
+            
+            <h3>Certifications & Qualifications</h3>
+            <div class="certification">
+                <p><strong>Education:</strong> Biology, Dog Behavior, Dog Training - Germany</p>
+            </div>
+            <div class="certification">
+                <p><strong>Location:</strong> Mannheim, Germany (Online coaching available worldwide)</p>
+            </div>
+            <div class="certification">
+                <p><strong>Approach:</strong> Science-based, modern, compassionate training methods</p>
+            </div>
+            
+            <h3>Why Work With Me?</h3>
+            <ul style="margin-left: 2rem; margin-top: 1rem;">
+                <li>Evidence-based training methods backed by behavioral science</li>
+                <li>Personalized approach tailored to your dog's unique needs</li>
+                <li>Focus on the human-dog relationship and mutual understanding</li>
+                <li>Flexible scheduling with online and in-person options</li>
+                <li>Compassionate, patient, and supportive coaching</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Uno Dogs Tres. All rights reserved.</p>
+        <p><a href="impressum.html">Impressum</a> | <a href="terms.html">Terms & Conditions</a> | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
